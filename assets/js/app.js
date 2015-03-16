@@ -177,7 +177,7 @@ $(document).ready(function() {
             if (index == correct) {
                 $("#answer, .correct").show("slow");
                 $(".correct-image").attr('src', cqd.correctImage);
-                $(".correct-description").append("penalty Description: " + cqd.correctDescription);
+                $(".correct-description").append("Description: " + cqd.correctDescription);
                 $("#game").hide("slow"); 
                 numberCorrect++; 
                 ++currentQuestionNum;
@@ -185,7 +185,7 @@ $(document).ready(function() {
             } else {
                 $("#answer, .incorrect").show("slow");
                 $(".correct-image").attr('src', cqd.correctImage);
-                $(".correct-description").append("penalty Description: "+cqd.correctDescription);
+                $(".correct-description").append("Description: "+cqd.correctDescription);
                 $("#game").hide("slow"); 
                 ++currentQuestionNum;
             }
