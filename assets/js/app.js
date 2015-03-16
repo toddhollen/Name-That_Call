@@ -19,7 +19,7 @@
         correctDescription:'Charging is similar to boarding, but can take place in open ice as well as along the boards. It is a violent hit, usually identified by a player taking 3 or more strides or leaving his feet to make the hit.'
         },
         {
-        question: "Goal",
+        question: "Goal Scored",
         choices: ["assets/images/refgamequestions/timeout.jpg","assets/images/refgamequestions/roughing.jpg", "assets/images/refgamequestions/offside.jpg", "assets/images/refgamequestions/goal.jpg"],
         qNum : 2,
         correct : 3,
