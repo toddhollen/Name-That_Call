@@ -8,7 +8,7 @@
         qNum : 0,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/boarding.jpg"],
-        description: ''
+        correctDescription: 'Boarding is when a player checks, throws, or trips a player violently into the boards. This penelty tends to be up to the ref\'s discretion more than others. Often the incident can be similar to "Checking from Behind" or "Charging."'
         },
         {
         question: "Charging",
@@ -16,7 +16,7 @@
         qNum : 1,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/charging.jpg"],
-        description:''
+        correctDescription:'Charging is similar to boarding, but can take place in open ice as well as along the boards. It is a violent hit, usually identified by a player taking 3 or more strides or leaving his feet to make the hit.'
         },
         {
         question: "Goal",
@@ -24,7 +24,7 @@
         qNum : 2,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/goal.jpg"],
-        description:''
+        correctDescription:'A goal is scored when the puck completely crosses the goal line. A puck that stops on the goal line or does not completely cross the line is not counted.'
         },
         {
         question: "High Sticking",
@@ -32,7 +32,7 @@
         qNum : 3,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/high.jpg"],
-        description:''
+        correctDescription:'High sticking can either be called as a penelty or an infraction. A penelty is called when the stick contacts another player above the shoulder. If the player plays the puck above the shoulder during game play, the play is stopped. If a goal is scored after being hit by a stick higher than the cross-bar, the goal is not allowed (the height varies depending on the league).'
         },
         {
         question: "Delayed Offsides",
@@ -40,7 +40,7 @@
         qNum : 4,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/offside.jpg"],
-        description:''
+        correctDescription:'Offsides occurs when an offensive player enters his or her offensive zone (crosses the blue line), before the puck. If the play is in the offensive zone, but the puck leaves the zone and re-enters, the referee will raise one arm to indicate a delayed offside. If an offensive player touches the puck before all players on his team leave the zone, the play will be stopped with a faceoff outside of the blue line.'
         },
         {
         question: "Roughing",
@@ -48,7 +48,7 @@
         qNum : 5,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/roughing.jpg"],
-        description:''
+        correctDescription:'Roughing varies depeding on the league. Roughing is typically called for an avoidable check after the play has stopped or after a player is no longer in possession of the puck. It can also be called is a player punches another. In the NHL, a punch is usually considered a minor roughing penelty, however, in youth hockey, a punch is usually considered a major (5 minute) penetly for Fighting.'
         },
         {
         question: "Spearing",
@@ -56,7 +56,7 @@
         qNum : 6,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/spearing.jpg"],
-        description:''
+        correctDescription:'Spearing occurs when a player attemps to stab a player with the blade of his stick and can be called whether contact is made or not. This is a serious penelty and results in a major penelty (5 minutes) and game misconduct according to USA Hockey rules for youth leagues. In the NHL, a double-minor (two 2 mintes consecutive penelties) is imposed on players who attempt to spear, but do not make contact. A major penelty and misconduct are imposed for contact. Players may also face other disiplinaty actions such as fines and suspentions.'
         },
         {
         question: "Washout",
@@ -64,7 +64,7 @@
         qNum : 7,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/washout.jpg"],
-        description:''
+        correctDescription:'A signal used to negate a delayed call, such as when players touch up after a delayed offsides is signaled. This allows play to continue without a stoppage. It is also used to signal "No Goal" if the puck fails to completely cross the line. '
         },
         {
         question: "Hand Pass",
@@ -72,7 +72,7 @@
         qNum : 8,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/hand.jpg"],
-        description:''
+        correctDescription:'Players are allowed to stop or bat the puck out of the air or move the puck along the ice with an open hand. They can pass the puck to a teammate as long as both are in their defensive zone. If a player directs the puck to a teammate outside of the defensive zone, there is a stoppage of play and a faceoff. A minor penelty (either "delay of game" or "handling the puck" can be imposed if a player, other than the goalie, closes his hand on the puck and does not immediatly place it on the ice.'
         },
         {
         question: "Misconduct",
@@ -80,20 +80,15 @@
         qNum : 9,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/misconduct.jpg"],
-        description:''
+        correctDescription:'A misconduct penelty is the removal of a player from from the ice for 10 minutes or for the remainder of the game. The player is replaced on the ice, so the team is not shorthanded during the durration, unless the misconduct occured with another minor or major penelty. Goalies do not serve misconducts, the penelty is served by another teammate. And any coaches or staff given a misconduct cannot be on the bench or direct the team play. Misconducts are imposed for a long list of infraction, but are generally for unsportsman-like behavior, such as arguing with the referee or intentionally breaking one\'s stick.'
         },
-        {
-        question: "Tripping",
-        choices: ["assets/images/refgamequestions/timeout.jpg","assets/images/refgamequestions/tripping.jpg", "assets/images/refgamequestions/holding-stick.jpg", "assets/images/refgamequestions/grasping.jpg"],
-        qNum : 10,
-        correct : 1,
-        correctImage : ["assets/images/refgameanswers/tripping.jpg"],
-        description:''
-        }]
+
+        ]
 
         //Global Variables
         var numberCorrect = 0;
         var currentQuestionData = questions[currentQuestionNum];
+    
 
     // Intro Screen - Click to Start
     var getCurrentQuestionData = function(questions, currentQuestionNum){
@@ -126,14 +121,14 @@
 
 $(document).ready(function() {
     
-    $(".start").click(function(){
+    $(".start").click(function(event){
         event.preventDefault();
         $("#game").show("slow");
         $("#intro").hide("slow");
         showCurrentquestion(currentQuestionData); 
     });
 
-    $(".return").click(function(){
+    $(".return").click(function(event){
         event.preventDefault();
 
         // Bring in UI for Game
@@ -143,18 +138,20 @@ $(document).ready(function() {
         // Clear out original responses
         $(".correct, .incorrect").hide();
         $(".correct-image").attr('src', '');
-
-    
+        $(".correct-description").text(" ");
+       
+   
 
         // Get Data to display
         var cqd = getCurrentQuestionData(questions, currentQuestionNum);
-
+ 		
         // Display Data
         if (currentQuestionNum == questions.length){ 
             //    show end of game screen
             $("#answer, .correct, .incorrect, #game").hide();
             $("#end").show("slow");
-            $('.number').append(numberCorrect)
+            $('.number').append(numberCorrect);
+            $(".tweet").attr( "href", "https://twitter.com/intent/tweet?text=I%20got%20"+numberCorrect+"%20out%20of%2010%20referee%20calls%20correct!%20How%20many%20can%20you%20get%3F%20http%3A%2F%2Fgoo.gl%2FhiIdXJ%20via%20%40BandBhockey%20%23hockey");
         } else {
             showCurrentquestion(cqd);
         }
@@ -176,20 +173,22 @@ $(document).ready(function() {
 
         var correct = cqd.correct;
         var correctImage = cqd.correctImage;
+        var description = cqd.correctDescription;
             if (index == correct) {
                 $("#answer, .correct").show("slow");
                 $(".correct-image").attr('src', cqd.correctImage);
-                $("#game").hide("slow");  
+                $(".correct-description").append("Penelty Description: " + cqd.correctDescription);
+                $("#game").hide("slow"); 
+                numberCorrect++; 
                 ++currentQuestionNum;
-                numberCorrect++;
+                
             } else {
                 $("#answer, .incorrect").show("slow");
                 $(".correct-image").attr('src', cqd.correctImage);
+                $(".correct-description").append("Penelty Description: "+cqd.correctDescription);
                 $("#game").hide("slow"); 
                 ++currentQuestionNum;
             }
     });
-
-    
 
 });
