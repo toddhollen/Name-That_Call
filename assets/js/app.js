@@ -8,7 +8,7 @@
         qNum : 0,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/boarding.jpg"],
-        correctDescription: 'Boarding is when a player checks, throws, or trips a player violently into the boards. This penelty tends to be up to the ref\'s discretion more than others. Often the incident can be similar to "Checking from Behind" or "Charging."'
+        correctDescription: 'Boarding is when a player checks, throws, or trips a player violently into the boards. This penalty tends to be up to the ref\'s discretion more than others. Often the incident can be similar to "Checking from Behind" or "Charging."'
         },
         {
         question: "Charging",
@@ -32,7 +32,7 @@
         qNum : 3,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/high.jpg"],
-        correctDescription:'High sticking can either be called as a penelty or an infraction. A penelty is called when the stick contacts another player above the shoulder. If the player plays the puck above the shoulder during game play, the play is stopped. If a goal is scored after being hit by a stick higher than the cross-bar, the goal is not allowed (the height varies depending on the league).'
+        correctDescription:'High sticking can either be called as a penalty or an infraction. A penalty is called when the stick contacts another player above the shoulder. If the player plays the puck above the shoulder during game play, the play is stopped. If a goal is scored after being hit by a stick higher than the cross-bar, the goal is not allowed (the height varies depending on the league).'
         },
         {
         question: "Delayed Offsides",
@@ -48,7 +48,7 @@
         qNum : 5,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/roughing.jpg"],
-        correctDescription:'Roughing varies depeding on the league. Roughing is typically called for an avoidable check after the play has stopped or after a player is no longer in possession of the puck. It can also be called is a player punches another. In the NHL, a punch is usually considered a minor roughing penelty, however, in youth hockey, a punch is usually considered a major (5 minute) penetly for Fighting.'
+        correctDescription:'Roughing varies depeding on the league. Roughing is typically called for an avoidable check after the play has stopped or after a player is no longer in possession of the puck. It can also be called is a player punches another. In the NHL, a punch is usually considered a minor roughing penalty, however, in youth hockey, a punch is usually considered a major (5 minute) penetly for Fighting.'
         },
         {
         question: "Spearing",
@@ -56,7 +56,7 @@
         qNum : 6,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/spearing.jpg"],
-        correctDescription:'Spearing occurs when a player attemps to stab a player with the blade of his stick and can be called whether contact is made or not. This is a serious penelty and results in a major penelty (5 minutes) and game misconduct according to USA Hockey rules for youth leagues. In the NHL, a double-minor (two 2 mintes consecutive penelties) is imposed on players who attempt to spear, but do not make contact. A major penelty and misconduct are imposed for contact. Players may also face other disiplinaty actions such as fines and suspentions.'
+        correctDescription:'Spearing occurs when a player attemps to stab a player with the blade of his stick and can be called whether contact is made or not. This is a serious penalty and results in a major penalty (5 minutes) and game misconduct according to USA Hockey rules for youth leagues. In the NHL, a double-minor (two 2 mintes consecutive penelties) is imposed on players who attempt to spear, but do not make contact. A major penalty and misconduct are imposed for contact. Players may also face other disiplinaty actions such as fines and suspentions.'
         },
         {
         question: "Washout",
@@ -72,7 +72,7 @@
         qNum : 8,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/hand.jpg"],
-        correctDescription:'Players are allowed to stop or bat the puck out of the air or move the puck along the ice with an open hand. They can pass the puck to a teammate as long as both are in their defensive zone. If a player directs the puck to a teammate outside of the defensive zone, there is a stoppage of play and a faceoff. A minor penelty (either "delay of game" or "handling the puck" can be imposed if a player, other than the goalie, closes his hand on the puck and does not immediatly place it on the ice.'
+        correctDescription:'Players are allowed to stop or bat the puck out of the air or move the puck along the ice with an open hand. They can pass the puck to a teammate as long as both are in their defensive zone. If a player directs the puck to a teammate outside of the defensive zone, there is a stoppage of play and a faceoff. A minor penalty (either "delay of game" or "handling the puck" can be imposed if a player, other than the goalie, closes his hand on the puck and does not immediatly place it on the ice.'
         },
         {
         question: "Misconduct",
@@ -80,7 +80,7 @@
         qNum : 9,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/misconduct.jpg"],
-        correctDescription:'A misconduct penelty is the removal of a player from from the ice for 10 minutes or for the remainder of the game. The player is replaced on the ice, so the team is not shorthanded during the durration, unless the misconduct occured with another minor or major penelty. Goalies do not serve misconducts, the penelty is served by another teammate. And any coaches or staff given a misconduct cannot be on the bench or direct the team play. Misconducts are imposed for a long list of infraction, but are generally for unsportsman-like behavior, such as arguing with the referee or intentionally breaking one\'s stick.'
+        correctDescription:'A misconduct penalty is the removal of a player from from the ice for 10 minutes or for the remainder of the game. The player is replaced on the ice, so the team is not shorthanded during the durration, unless the misconduct occured with another minor or major penalty. Goalies do not serve misconducts, the penalty is served by another teammate. And any coaches or staff given a misconduct cannot be on the bench or direct the team play. Misconducts are imposed for a long list of infraction, but are generally for unsportsman-like behavior, such as arguing with the referee or intentionally breaking one\'s stick.'
         },
 
         ]
@@ -177,7 +177,7 @@ $(document).ready(function() {
             if (index == correct) {
                 $("#answer, .correct").show("slow");
                 $(".correct-image").attr('src', cqd.correctImage);
-                $(".correct-description").append("Penelty Description: " + cqd.correctDescription);
+                $(".correct-description").append("penalty Description: " + cqd.correctDescription);
                 $("#game").hide("slow"); 
                 numberCorrect++; 
                 ++currentQuestionNum;
@@ -185,7 +185,7 @@ $(document).ready(function() {
             } else {
                 $("#answer, .incorrect").show("slow");
                 $(".correct-image").attr('src', cqd.correctImage);
-                $(".correct-description").append("Penelty Description: "+cqd.correctDescription);
+                $(".correct-description").append("penalty Description: "+cqd.correctDescription);
                 $("#game").hide("slow"); 
                 ++currentQuestionNum;
             }
