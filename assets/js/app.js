@@ -48,7 +48,7 @@
         qNum : 5,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/roughing.jpg"],
-        correctDescription:'Roughing varies depeding on the league. Roughing is typically called for an avoidable check after the play has stopped or after a player is no longer in possession of the puck. It can also be called is a player punches another. In the NHL, a punch is usually considered a minor roughing penalty, however, in youth hockey, a punch is usually considered a major (5 minute) penetly for Fighting.'
+        correctDescription:'Roughing varies depending on the league. Roughing is typically called for an avoidable check after the play has stopped or after a player is no longer in possession of the puck. It can also be called if a player punches another. In the NHL, a punch is usually considered a minor roughing penalty, however, in youth hockey, a punch is usually considered a major (5 minute) penalty for Fighting.'
         },
         {
         question: "Spearing",
@@ -56,7 +56,7 @@
         qNum : 6,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/spearing.jpg"],
-        correctDescription:'Spearing occurs when a player attemps to stab a player with the blade of his stick and can be called whether contact is made or not. This is a serious penalty and results in a major penalty (5 minutes) and game misconduct according to USA Hockey rules for youth leagues. In the NHL, a double-minor (two 2 mintes consecutive penelties) is imposed on players who attempt to spear, but do not make contact. A major penalty and misconduct are imposed for contact. Players may also face other disiplinaty actions such as fines and suspentions.'
+        correctDescription:'Spearing occurs when a player attempts to stab a player with the blade of his stick and can be called whether contact is made or not. This is a serious penalty and results in a major penalty (5 minutes) and game misconduct according to USA Hockey rules for youth leagues. In the NHL, a double-minor (two 2 minutes consecutive penalties) is imposed on players who attempt to spear, but do not make contact. A major penalty and misconduct are imposed for contact. Players may also face other disciplinary actions such as fines and suspensions.'
         },
         {
         question: "Washout",
@@ -64,7 +64,7 @@
         qNum : 7,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/washout.jpg"],
-        correctDescription:'A signal used to negate a delayed call, such as when players touch up after a delayed offsides is signaled. This allows play to continue without a stoppage. It is also used to signal "No Goal" if the puck fails to completely cross the line. '
+        correctDescription:'A signal used to negate a delayed call, such as when players touch up after a delayed offsides is signaled. This allows play to continue without a stoppage. It is also used to signal "No Goal" if the puck fails to completely cross the line.'
         },
         {
         question: "Hand Pass",
@@ -72,15 +72,14 @@
         qNum : 8,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/hand.jpg"],
-        correctDescription:'Players are allowed to stop or bat the puck out of the air or move the puck along the ice with an open hand. They can pass the puck to a teammate as long as both are in their defensive zone. If a player directs the puck to a teammate outside of the defensive zone, there is a stoppage of play and a faceoff. A minor penalty (either "delay of game" or "handling the puck" can be imposed if a player, other than the goalie, closes his hand on the puck and does not immediatly place it on the ice.'
-        },
+        correctDescription:'Players are allowed to stop or bat the puck out of the air or move the puck along the ice with an open hand. They can pass the puck to a teammate as long as both are in their defensive zone. If a player directs the puck to a teammate outside of the defensive zone, there is a stoppage of play and a faceoff. A minor penalty (either "delay of game" or "handling the puck" can be imposed if a player, other than the goalie, closes his hand on the puck and does not immediately place it on the ice.'       },
         {
         question: "Misconduct",
         choices: ["assets/images/refgamequestions/misconduct.jpg","assets/images/refgamequestions/interference.jpg", "assets/images/refgamequestions/roughing.jpg", "assets/images/refgamequestions/slashing.jpg"],
         qNum : 9,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/misconduct.jpg"],
-        correctDescription:'A misconduct penalty is the removal of a player from from the ice for 10 minutes or for the remainder of the game. The player is replaced on the ice, so the team is not shorthanded during the durration, unless the misconduct occured with another minor or major penalty. Goalies do not serve misconducts, the penalty is served by another teammate. And any coaches or staff given a misconduct cannot be on the bench or direct the team play. Misconducts are imposed for a long list of infraction, but are generally for unsportsman-like behavior, such as arguing with the referee or intentionally breaking one\'s stick.'
+        correctDescription:'A misconduct penalty is the removal of a player from from the ice for 10 minutes or for the remainder of the game. The player is replaced on the ice, so the team is not shorthanded during the duration, unless the misconduct occurred with another minor or major penalty. Goalies do not serve misconducts, the penalty is served by another teammate. And any coaches or staff given a misconduct cannot be on the bench or direct the team play. Misconducts are imposed for a long list of infractions, but are generally for unsportsmanlike behavior, such as arguing with the referee or intentionally breaking one\'s stick.'
         },
 
         ]

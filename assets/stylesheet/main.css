@@ -222,10 +222,17 @@ button:hover{
 	height: 350px;
 }
 
-.store img{
+.store-img{
 
 	height: 220px;
 	margin: 20px auto;
+
+}
+
+.cnt_horizontal{
+
+	height: 100px;
+	margin: 20px auto 0px auto;
 
 }
 
