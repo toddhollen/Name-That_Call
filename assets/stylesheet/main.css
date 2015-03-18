@@ -222,10 +222,19 @@ button:hover{
 	height: 350px;
 }
 
+.store{
+	
+	border-top: 2px solid white;
+	margin-top: 40px;
+	padding-top: 10px;
+	
+}
+
+
 .store-img{
 
 	height: 220px;
-	margin: 20px auto;
+	margin: 0px auto;
 
 }
 
@@ -236,7 +245,7 @@ button:hover{
 
 }
 
-.review, .store{
+.review{
 	border-top: 2px solid white;
 	margin-top: 12px;
 	padding-top: 10px;
