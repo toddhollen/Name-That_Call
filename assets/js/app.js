@@ -8,6 +8,7 @@
         qNum : 0,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/boarding.jpg"],
+        correctImage2 : ["assets/images/penalties/boarding.gif"],
         correctDescription: 'Boarding is when a player checks, throws, or trips a player violently into the boards. This penalty tends to be up to the ref\'s discretion more than others. Often the incident can be similar to "Checking from Behind" or "Charging."'
         },
         {
@@ -16,6 +17,7 @@
         qNum : 1,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/charging.jpg"],
+        correctImage2 : ["assets/images/penalties/charging.gif"],
         correctDescription:'Charging is similar to boarding, but can take place in open ice as well as along the boards. It is a violent hit, usually identified by a player taking 3 or more strides or leaving his feet to make the hit.'
         },
         {
@@ -24,6 +26,7 @@
         qNum : 2,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/goal.jpg"],
+        correctImage2 : ["assets/images/penalties/goal.gif"],
         correctDescription:'A goal is scored when the puck completely crosses the goal line. A puck that stops on the goal line or does not completely cross the line is not counted.'
         },
         {
@@ -32,6 +35,7 @@
         qNum : 3,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/high.jpg"],
+        correctImage2 : ["assets/images/penalties/high.gif"],
         correctDescription:'High sticking can either be called as a penalty or an infraction. A penalty is called when the stick contacts another player above the shoulder. If the player plays the puck above the shoulder during game play, the play is stopped. If a goal is scored after being hit by a stick higher than the cross-bar, the goal is not allowed (the height varies depending on the league).'
         },
         {
@@ -40,6 +44,7 @@
         qNum : 4,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/offside.jpg"],
+        correctImage2 : ["assets/images/penalties/offside.gif"],
         correctDescription:'Offsides occurs when an offensive player enters his or her offensive zone (crosses the blue line), before the puck. If the play is in the offensive zone, but the puck leaves the zone and re-enters, the referee will raise one arm to indicate a delayed offside. If an offensive player touches the puck before all players on his team leave the zone, the play will be stopped with a faceoff outside of the blue line.'
         },
         {
@@ -48,6 +53,7 @@
         qNum : 5,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/roughing.jpg"],
+        correctImage2 : ["assets/images/penalties/roughing.gif"],
         correctDescription:'Roughing varies depending on the league. Roughing is typically called for an avoidable check after the play has stopped or after a player is no longer in possession of the puck. It can also be called if a player punches another. In the NHL, a punch is usually considered a minor roughing penalty, however, in youth hockey, a punch is usually considered a major (5 minute) penalty for Fighting.'
         },
         {
@@ -56,6 +62,7 @@
         qNum : 6,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/spearing.jpg"],
+        correctImage2 : ["assets/images/penalties/spearing.gif"],
         correctDescription:'Spearing occurs when a player attempts to stab a player with the blade of his stick and can be called whether contact is made or not. This is a serious penalty and results in a major penalty (5 minutes) and game misconduct according to USA Hockey rules for youth leagues. In the NHL, a double-minor (two 2 minutes consecutive penalties) is imposed on players who attempt to spear, but do not make contact. A major penalty and misconduct are imposed for contact. Players may also face other disciplinary actions such as fines and suspensions.'
         },
         {
@@ -64,6 +71,7 @@
         qNum : 7,
         correct : 1,
         correctImage : ["assets/images/refgameanswers/washout.jpg"],
+        correctImage2 : ["assets/images/penalties/washout.gif"],
         correctDescription:'A signal used to negate a delayed call, such as when players touch up after a delayed offsides is signaled. This allows play to continue without a stoppage. It is also used to signal "No Goal" if the puck fails to completely cross the line.'
         },
         {
@@ -72,6 +80,7 @@
         qNum : 8,
         correct : 3,
         correctImage : ["assets/images/refgameanswers/hand.jpg"],
+        correctImage2 : ["assets/images/penalties/hand.gif"],
         correctDescription:'Players are allowed to stop or bat the puck out of the air or move the puck along the ice with an open hand. They can pass the puck to a teammate as long as both are in their defensive zone. If a player directs the puck to a teammate outside of the defensive zone, there is a stoppage of play and a faceoff. A minor penalty (either "delay of game" or "handling the puck" can be imposed if a player, other than the goalie, closes his hand on the puck and does not immediately place it on the ice.'       },
         {
         question: "Misconduct",
@@ -79,6 +88,7 @@
         qNum : 9,
         correct : 0,
         correctImage : ["assets/images/refgameanswers/misconduct.jpg"],
+        correctImage2 : ["assets/images/penalties/misconduct.gif"],
         correctDescription:'A misconduct penalty is the removal of a player from from the ice for 10 minutes or for the remainder of the game. The player is replaced on the ice, so the team is not shorthanded during the duration, unless the misconduct occurred with another minor or major penalty. Goalies do not serve misconducts, the penalty is served by another teammate. And any coaches or staff given a misconduct cannot be on the bench or direct the team play. Misconducts are imposed for a long list of infractions, but are generally for unsportsmanlike behavior, such as arguing with the referee or intentionally breaking one\'s stick.'
         },
 
@@ -188,6 +198,14 @@ $(document).ready(function() {
                 $("#game").hide("slow"); 
                 ++currentQuestionNum;
             }
+   
+
+    $(".correct-image").hover(function() {
+        $(this).attr('src', cqd.correctImage2);
+    }, function() {
+        $(this).attr('src', cqd.correctImage);
+    });
+
     });
 
 });

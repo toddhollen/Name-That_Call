@@ -83,6 +83,12 @@ h5{
 
 }
 
+h6{
+
+	font-size: 1em;
+
+}
+
 a{
 	color: #00abd8;
 	text-decoration: none;
@@ -182,7 +188,15 @@ button:hover{
 	}
 
 .correct h1, .incorrect h1, .incorrect h2{
+	
 	margin: 20px;
+
+}
+
+.correct h6, .incorrect h6{
+
+	margin-bottom: 10px;
+
 }
 
 .correct-image{
